@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Editeur de texte">
+	<link rel="stylesheet" type="text/css" href="./my_wysiwyg.css">
+
+	<title>My WYSIWYG</title>
+
+</head>
+<body>
+
+	<h1><img src="assets/title-paper.png"></h1>
+
+		<div class="fond">
+
+	<!-- Librairie Jquery :
+		CDN (Content Delivery Network ou réseau de distribution de contenu).
+		Permets de ne pas avoir à stocker le jQuery dans nos fichiers et optimise les performances de notre page.
+	-->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<!-- zone de texte pour la génération du code HTML -->
+			<textarea></textarea>
+			
+		</div>
+
+
+					<!-- Plugin -->
+<script>
+
+	// Exécution du JS dans notre fonction anonyme dès que le DOM (html) est prêt à être manipulé :
+	$(document).ready(function() {
+
+	// Plugin créé dans notre JS :
+	$("textarea").my_wysiwyg ()
+	});
+
+</script>
+					<!-- Fin Plugin -->
+
+
+
+<!-- liaison code JS -->
+<script type="text/javascript" src="jquery.my_wysiwyg.js"></script>
+
+</body>
+</html>
